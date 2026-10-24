@@ -88,3 +88,8 @@ The report provides details about test results and any failures.
 - Tests run against the publicly available PrestaShop demo store.
 - Test execution depends on the availability and responsiveness of the demo environment.
 - Registration tests use generated email addresses where appropriate to reduce conflicts with existing accounts.
+
+## Reflection: What I Would Improve for a Production Project
+
+If this test suite were part of a real production project, I would use unique test data, such as a different email address for each registration test, to prevent failures caused by accounts created during previous test runs. I would also add more test scenarios, run the tests in different browsers and collect screenshots or traces when tests fail to make debugging easier. Finally, I would learn how to integrate the tests with a CI/CD pipeline so they could run automatically whenever changes are made to the application.
+
